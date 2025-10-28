@@ -5,3 +5,21 @@
   <input type="text" id="lname" name="lname"><br><br>
   <input type="submit" value="Submit">
 </form>
+<script>
+  ;(function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0]
+    if (d.getElementById(id)) {
+      return
+    }
+    js = d.createElement(s)
+    js.id = id
+    js.src = "https://static.zdassets.com/conversation-extensions/latest/sdk.js"
+    fjs.parentNode.insertBefore(js, fjs)
+  })(document, "script", "WebviewSdkScript")
+
+  window.webviewSdkInit = function (WebviewSdk) {
+  // the SDK is passed in parameter to this callback
+  // and is also available at `window.WebviewSdk` for convenience
+}
+</script>
